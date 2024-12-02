@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #1a1a1a;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  color: #aaa;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+
+.sidebar ul li a:hover {
+  color: #fff;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.card p {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.card small {
+  color: #aaa;
+}
+
+.card-link {
+  text-decoration: none;
+  color: white;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+  transform: scale(1.1); /* Cresce 10% */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
+/* Estilo da barra de pesquisa */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a; /* Cor de fundo */
+  border: 2px solid #2a2a2a; /* Borda */
+  border-radius: 25px; /* Cantos arredondados */
+  overflow: hidden; /* Para manter o botão dentro */
+  width: 100%; /* Largura da barra de pesquisa */
+  max-width: 800px; /* Limita o tamanho */
+  height: 60px;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo do input */
+.search-bar input {
+  border: none;
+  background: none;
+  color: #fff;
+  flex-grow: 1;
+  padding: 0 15px;
+  outline: none; /* Remove o contorno */
+  font-size: 16px;
+}
+
+/* Estilo do botão com o ícone */
+.search-bar .search-icon {
+  background-color: #2a2a2a; /* Cor do botão */
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search-bar .search-icon:hover {
+  background-color: #ff5252; /* Efeito de hover */
+}
